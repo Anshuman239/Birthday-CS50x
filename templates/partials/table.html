@@ -1,0 +1,7 @@
+{% for bday in bdays %}
+    <tr class="bday-row" id="{{ bday['id'] }}">
+        <td>{{ bday['name'] }}</td>
+        <td>{{ bday['day'] }}/{{ bday['month'] }}</td>
+        <td class='rm-row'><button type='button' class="material-symbols-outlined">close</button></td>
+    </tr>
+{% endfor %}

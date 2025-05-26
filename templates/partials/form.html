@@ -1,0 +1,38 @@
+<form action='/' method='post'>
+    <div id='bg-collider'></div>
+    <input type='text' name='submit_name' placeholder='Name' autofocus required>
+    <span class='parent-container'>
+        <span class='calendar-bg child-container' id='calendar' style='display: none'>
+            <div class='calendar-header'>
+                <button type='button' class="material-symbols-outlined" id='close-button'>close</button>
+                <div class='dropdown element-justified'>
+                    <button id='year-left' type='button' class="material-symbols-outlined">chevron_left</button>
+                    <select class='options-dropdown' id='calendar-year' name="submit_year"></select>
+                    <button id='year-right' type='button' class="material-symbols-outlined">chevron_right</button>
+                </div>
+                <div class='dropdown element-justified'>
+                    <button id='month-left' type='button' class="material-symbols-outlined">chevron_left</button>
+                    <select class='options-dropdown' id='calendar-month' name="submit_month"></select>
+                    <button id='month-right' type='button' class="material-symbols-outlined">chevron_right</button>
+                </div>
+            </div>
+            <div id='calendar-weekdays'>
+                <ul class='list-inline element-justified'>
+                    <li id='sun'>S</li>
+                    <li id='mon'>M</li>
+                    <li id='tues'>T</li>
+                    <li id='wed'>W</li>
+                    <li id='thur'>T</li>
+                    <li id='fri'>F</li>
+                    <li id='sat'>S</li>
+                </ul>
+            </div>
+            <div id='calendar-dates'>
+            </div>
+        </span>
+        <input type='hidden' id='date_value' name="sumbit_date">
+        <input type='text' id='date' placeholder='DD/MM/YYYY' required readOnly>
+    </span>
+    <input type='submit' value='Submit'>
+</form>
+<script src='/static/script.js'></script>
